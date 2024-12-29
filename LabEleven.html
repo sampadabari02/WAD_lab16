@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+	        background-color: #ffffff;
+	        color: #111111;
+	        font-family: Georgia, "Times New Roman", Times, serif;
+	        padding: 20px;
+        }
+
+        form {
+            background-color: #a0b164;
+            border-radius: 5px;
+	        padding: 20px;
+	        width: 400px;
+        }
+
+        legend {
+            color: #384313;
+            font-size: 16px;
+            font-weight: bold;
+            padding-bottom: 10px;
+            text-shadow: 0 1px 1px #c0d576;
+        }
+
+        fieldset {
+            border: none;
+            margin-bottom: 10px;
+        }
+        
+        
+     </style>
+</head>
+<body>
+    <!-- 9-12-2024 SAMPADA BARI B-tech Comp Div-A  LAB 11 -->
+     <center>
+        <h2>Payment Information</h2>
+        <form>    
+            <fieldset>
+                <legend>Your Information</legend>
+                <ol>
+                    <li>
+                        Name : <input id=name name=name type=text placeholder="First and last name" required autofocus>
+                    </li>
+                    <li>
+                        Email : <input id=email name=email type=email placeholder="example@12.com" required>
+                    </li>
+                    <li>
+                        Phone : <input id=phone name=phone type=tel placeholder="Eg. +44****" required>
+                    </li>
+                </ol>
+            </fieldset>
+            <hr>
+            <fieldset>
+            <legend>Delivery Address</legend>
+                <ol>
+                    <li>
+                        Address : <input id="Add" name="Address" >
+                    </li>
+                    <li>
+                        Pin Code : <input id="PinCo" name="Pincode" type="number" required autofocus>
+                    </li>
+                </ol>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Payment Details</legend>
+                <ol>
+                    <li>
+                       <input type="radio" name="details" value="Card"> Card Type 
+                    </li>    
+                    <li>
+                        <input type="radio" name="details" value="Cash"> Cash On Delivery 
+                    </li>
+                    <li>
+                        <input type="radio" name="details" value="NetB"> Net Banking
+                    </li>
+                    <li>
+                        <input type="radio" name="details" value="UPI"> UPI
+                    </li>
+                </ol> 
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Add On's</legend>
+                <ol>
+                    <li>
+                        <input type="checkbox" name="chkOne" value="Dessert">Dessert
+                    </li>
+                    <li>
+                        <input type="checkbox" name="chkTwo" value="SoftDrinks">Soft Drinks
+                    </li>
+                    <li>
+                        <input type="checkbox" name="chkThree" value="ExtraCheese">Extra Cheese 
+                    </li>
+                    <li>
+                        <input type="checkbox" name="chkFour" value="Beverages">Beverages
+                    </li>
+                    <li>
+                        <input type="checkbox" name="chkFive" value="hotDrinks">Hot Drinks
+                    </li>
+                </ol>
+            </fieldset>
+            <fieldset>
+                <button type=submit>Buy it!</button>
+            </fieldset>
+        </form>
+     </center>
+    
+
+</body>
+</html>
